@@ -21,7 +21,7 @@ CREATE TABLE poll (
 	preferences_type varchar NULL,
 	device varchar NULL,
 	"level" varchar NULL,
-	meta_data jsonb NOT NULL,
+	meta_data jsonb  NULL,
 	CONSTRAINT poll_pk PRIMARY KEY (id),
 	CONSTRAINT poll_user_fk FOREIGN KEY (created_user_id) REFERENCES "user"(id)
 );

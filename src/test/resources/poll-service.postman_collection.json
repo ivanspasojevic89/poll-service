@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "b5832c6a-ef84-45a8-8db1-82581366d712",
+		"name": "PollService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findAllUserPolls",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userID\":3,\n\t\"limit\":10,\n\t\"offset\":1\n}"
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findPolls",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"\",\n\t\"dateFrom\":\"\",\n\t\"userID\":,\n\t\"limit\":10,\n\t\"offset\":1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/poll//findPolls",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"poll",
+						"",
+						"findPolls"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPollDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}

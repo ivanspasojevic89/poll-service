@@ -1,5 +1,6 @@
 package com.someco.pollservice.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.someco.pollservice.model.Invitee;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,6 +11,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class InviteeDTO {
 
     private UserDTO invitedUser;

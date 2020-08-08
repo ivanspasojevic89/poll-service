@@ -1,5 +1,6 @@
 package com.someco.pollservice.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.someco.pollservice.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,6 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class UserDTO {
 
     @EqualsAndHashCode.Include

@@ -1,5 +1,6 @@
 package com.someco.pollservice.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.someco.pollservice.model.Poll;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,6 +12,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class PollDetails {
 
     private Long id;

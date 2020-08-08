@@ -1,5 +1,6 @@
 package com.someco.pollservice.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.someco.pollservice.model.Poll;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,6 +11,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class PollSummary {
 
     private Long id;
@@ -18,10 +20,10 @@ public class PollSummary {
     private String type;
     private String state;
     private String locale;
-    private UserDTO createdBy;
     private Date created;
     private Date modified;
     private String preferencesType;
+    private UserDTO createdBy;
     private String device;
     private String level;
 
